@@ -36,13 +36,13 @@ function pip_install_tensorflow {
 
   # 1) Do nothing; use a pre-installed version of TensorFlow.
   # The true is necessary; bash doesn't like empty functions.
-  # true
+  true
 
   # 2) Install a GPU-enabled version.
   # sudo -H pip install --upgrade 'tensorflow-gpu==1.7'
 
   # 3) Install a CPU-enabled version.  This is the default option.
-  sudo -H pip install --upgrade 'tensorflow==1.7'
+  # sudo -H pip install --upgrade 'tensorflow==1.7'
 
   # 4) Install a Google Cloud Platform optimized CPU-only version of TensorFlow.
   # curl https://storage.googleapis.com/deepvariant/packages/tensorflow/tensorflow-1.7.0.deepvariant_gcp-cp27-none-linux_x86_64.whl > /tmp/my.whl && sudo -H pip install --upgrade /tmp/my.whl
